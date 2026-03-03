@@ -1,0 +1,9 @@
+SignalName,Type,Unit,RateHz,RangeMin,RangeMax,Source,Destination
+sensor[5],float[5],-,100,0,1,SensorArray,Controller
+eline,float,m,100,-0.5,0.5,SensorArray,Controller
+obstacleflag,bool,-,100,0,1,Environment,Controller
+faultflag,bool,-,100,0,1,Environment,Controller
+uL,float,-,100,-1,1,Controller,Plant
+uR,float,-,100,-1,1,Controller,Plant
+v,float,m/s,100,0,1.5,Plant,HMI
+omega,float,rad/s,100,-3,3,Plant,HMI
