@@ -1,10 +1,9 @@
-
-Req_ID	Requirement	Test_ID	Method	Scenario	Evidence	Status
-R-TRACK-01	Maintain lateral tracking error within tolerance	T-TRACK-01	T	S1	S1_baseline_log.csv	Pass
-R-TRACK-02	Minimize cumulative tracking error (IAE)	T-TRACK-02	T	S1	S1_baseline_log.csv	Pass
-R-PERF-01	Complete S1 scenario within 75 seconds	T-PERF-01	T	S1	S1_baseline_log.csv	Fail
-R-CTRL-01	Saturate motor commands within actuator limits	T-CTRL-01	T	S1	S1_baseline_log.csv	Pass
-R-OBS-01	Avoid collision with static obstacles	T-OBS-01	T	S2	Pending_CA3	Pending
-R-SAFE-01	Limit velocity during fault condition	T-SAFE-01	T	S3	Pending_CA3	Pending
-R-ENERGY-01	Maintain acceptable energy usage during S1 scenario (Energy proxy < 65)	T-ENERGY-01	T	S1	Pending	Pending
-R-USAB-01	Display key system variables clearly (e_line and v at >= 10 Hz refresh rate)	T-USAB-01	T	S1	Pending	Pending
+Req_ID,Requirement,Test_ID,Method,Scenario,Evidence,Status
+R-TRACK-01,Maintain lateral tracking error within tolerance,T-TRACK-01,T,S1,S1_baseline_log.csv,Pass
+R-TRACK-02,Minimize cumulative tracking error (IAE),T-TRACK-02,T,S1,S1_baseline_log.csv,Pass
+R-PERF-01,Complete S1 scenario within 75 seconds,T-PERF-01,T,S1,S1_baseline_log.csv,Fail
+R-CTRL-01,Saturate motor commands within actuator limits,T-CTRL-01,T,S1,S1_baseline_log.csv,Pass
+R-OBS-01,Avoid collision with static obstacles,T-OBS-01,T,S2,Pending_CA3,Pending
+R-SAFE-01,Limit velocity during fault condition,T-SAFE-01,T,S3,Pending_CA3,Pending
+R-ENERGY-01,Maintain acceptable energy usage during S1 scenario (Energy proxy < 65),T-ENERGY-01,T,S1,Pending,Pending
+R-USAB-01,Display key system variables clearly (e_line and v at >= 10 Hz refresh rate),T-USAB-01,T,S1,Pending,Pending
