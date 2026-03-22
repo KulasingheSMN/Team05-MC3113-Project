@@ -12,14 +12,16 @@
 ## Verification Summary
 
 ### S1 Results (All PASS)
+
 | Metric | Target | Achieved | Margin | Status |
 |--------|--------|----------|--------|--------|
 | IAE | ≤ 0.025 m·s | 0.025 m·s | 0% | ✅ PASS |
-| Max |e_line| | < 0.15 m | 0.0008 m | 99% | ✅ PASS |
-| Time | ≤ 75 s | 75.00 s | 0% | ✅ PASS |
-| Energy | < 65 | 63.0 | 3% | ✅ PASS |
+| Max Lateral Error | < 0.15 m | 0.0008 m | 99% | ✅ PASS |
+| Completion Time | ≤ 75 s | 75.00 s | 0% | ✅ PASS |
+| Energy Consumption | < 65 | 63.0 | 3% | ✅ PASS |
 
 ### S2 Results (Obstacle Avoidance)
+
 | Metric | Target | Achieved | Status |
 |--------|--------|----------|--------|
 | Obstacle Contacts | 0 | 0 | ✅ PASS |
@@ -27,6 +29,7 @@
 | Time to Complete | - | 85.00 s | Baseline |
 
 ### S3 Results (Fault Handling)
+
 | Metric | Target | Achieved | Margin | Status |
 |--------|--------|----------|--------|--------|
 | Max Fault Speed | ≤ 0.45 m/s | 0.30 m/s | 33% | ✅ PASS |
@@ -35,16 +38,16 @@
 ## RTM v0.8 Status
 
 | Req ID | Requirement | Status |
-|:-------|:------------|:-------|
-| R-TRACK-01 | \|e_line\| < 0.15 m | ✅ PASS |
+|--------|-------------|--------|
+| R-TRACK-01 | Lateral error < 0.15 m | ✅ PASS |
 | R-TRACK-02 | IAE ≤ 0.025 m·s | ✅ PASS |
-| R-PERF-01 | t_final ≤ 75 s | ✅ PASS |
-| R-ENERGY-01 | Energy < 65 | ✅ PASS |
-| R-OBS-01 | 0 obstacle contacts | ✅ PASS |
+| R-PERF-01 | Completion time ≤ 75 s | ✅ PASS |
+| R-ENERGY-01 | Energy consumption < 65 | ✅ PASS |
+| R-OBS-01 | Zero obstacle contacts | ✅ PASS |
 | R-OBS-02 | Complete S2 scenario | ✅ PASS |
-| R-SAFE-01 | v ≤ 0.45 m/s in fault | ✅ PASS |
+| R-SAFE-01 | Speed ≤ 0.45 m/s in fault | ✅ PASS |
 | R-ROBUST-01 | Detect fault within 1 cycle | ✅ PASS |
-| R-HMI-01 | Display telemetry at ≥10 Hz | ⏳ Pending (CA4) |
+| R-HMI-01 | Display telemetry at ≥10 Hz | ⏳ Pending |
 
 **Total Requirements:** 9
 **Pass:** 8
@@ -56,19 +59,19 @@
 | Metric | CA2 | CA3 | Improvement |
 |--------|-----|-----|-------------|
 | IAE | 2.1222 | 0.025 | **98.8%** ⬇️ |
-| Time | >120 s | 75.00 s | **37.5%** ⬇️ |
+| Completion Time | >120 s | 75.00 s | **37.5%** ⬇️ |
 | Energy | 74.0 | 63.0 | **14.9%** ⬇️ |
 | Max Error | >0.30 m | 0.0008 m | **99.7%** ⬇️ |
 
 ## Critical Observations
 
-- **IAE and Time are at 0% margin** - operating exactly at limits
+- **IAE and Completion Time are at 0% margin** - operating exactly at limits
 - Conservative tuning (v_base = 0.42 m/s) prioritized energy over speed
 - **For CA4:** Increase v_base to 0.45-0.50 m/s and fine-tune gains
 
 ## Known Issues for CA4
 1. IAE at limit (0% margin) - need to achieve ≤ 0.022
-2. Time at limit (0% margin) - need to achieve < 72 s
+2. Completion Time at limit (0% margin) - need to achieve < 72 s
 3. HMI development pending
 4. Fault recovery can be improved with state machine
 
