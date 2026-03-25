@@ -10,7 +10,7 @@
 | RISK-04 | S2 obstacle avoidance fails | ~~Medium~~ **Low** | High | ✅ **MITIGATED** - 0 obstacle contacts achieved. For CA4: Increase threshold to 1.2m | Member 180 | **Mitigated** |
 | RISK-05 | S3 fault recovery not working | Medium | High | ⚠️ **PARTIAL** - Fault detection works (0.30 m/s cap). Recovery needs state machine for CA4 | Member 180 | **Open** |
 | RISK-06 | RTM not updated with results | ~~Low~~ **Low** | Medium | ✅ **MITIGATED** - RTM v0.8 updated with all PASS results | Member 43 | **Closed** |
-| RISK-07 | Team member delays | Low | Medium | ⚠️ **ONGOING** - Member 46 and 53 files still pending. Continue daily check-ins | Member 43 | **Open** |
+| RISK-07 | Team member delays | Low | Medium | ✅ **RESOLVED** - Member 46 files completed (plant model documentation, ICD, BDD/IBD). Member 53 files in progress. Continue daily check-ins for remaining tasks | Member 43 | **Mitigated** |
 
 ## New Risks Identified from CA3 Results
 
@@ -19,6 +19,7 @@
 | RISK-08 | IAE and Time at 0% margin (no safety buffer) | Medium | High | Increase v_base to 0.45-0.50 m/s and fine-tune PID gains for CA4 | Member 180 | Open |
 | RISK-09 | Energy may increase with speed increase | Low | Medium | Monitor energy consumption when increasing v_base; target to stay <65 | Member 43 | Open |
 | RISK-10 | HMI development delayed to CA4 | Low | Medium | Allocate sufficient time (minimum 3 days) for HMI development in CA4 | Member 43 | Open |
+| RISK-11 | Plant model documentation completion | Low | Low | ✅ **CLOSED** - Model documentation completed March 24 with state-space matrices, parameter derivation, and validation plots | Member 46 | **Closed** |
 
 ## Risk Mitigation Status (as of March 24)
 
@@ -56,4 +57,4 @@
 - **Status:** Open, Mitigated, Closed
 
 ---
-*Last Updated: 2026-03-24 by Member 43*
+*Last Updated: 2026-03-24 by Member 53*
