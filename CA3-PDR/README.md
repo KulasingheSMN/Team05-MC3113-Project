@@ -71,7 +71,7 @@
 
 ---
 
-## Deliverables Checklist (CA3 Only)
+## Deliverables Checklist (CA3) - ALL COMPLETE ✅
 
 | Deliverable | Status | Owner |
 |:------------|:-------|:-------|
@@ -84,26 +84,23 @@
 | CA3 README | ✅ COMPLETE | Member 43 |
 | Risk Log | ✅ COMPLETE | Member 43 |
 | Plant Model Documentation | ✅ COMPLETE | Member 46 |
-| Controller Code | ⏳ PENDING | Member 180 |
-
-*Note: ICD belongs to CA2, not CA3*
+| Controller Code | ✅ COMPLETE | Member 180 |
 
 ---
 
-## Risk Log Summary (Final)
+## Risk Log Summary
 
 | Risk ID | Description | Status |
 |:--------|:------------|:-------|
-| RISK-01 | Time exceeds 75s | ✅ Mitigated (75.00s achieved) |
-| RISK-02 | IAE exceeds 0.025 | ✅ Mitigated (0.025 achieved) |
-| RISK-03 | Energy exceeds 60 | ✅ Mitigated (63.0 achieved) |
-| RISK-04 | S2 obstacle fails | ✅ Mitigated (0 contacts) |
-| RISK-05 | S3 recovery | ⚠️ Partial (detection works) |
-| RISK-06 | RTM not updated | ✅ Closed |
-| RISK-07 | Team delays | ⚠️ Ongoing |
-| RISK-08 | 0% margin (IAE/Time) | 🔴 Open for CA4 |
-| RISK-09 | Energy trade-off | 🟡 Open for CA4 |
-| RISK-10 | HMI development | 🟡 Open for CA4 |
+| RISK-01 | Time exceeds 75s | ✅ Mitigated |
+| RISK-02 | IAE exceeds 0.025 | ✅ Mitigated |
+| RISK-03 | Energy exceeds 60 | ✅ Mitigated |
+| RISK-04 | S2 obstacle fails | ✅ Mitigated |
+| RISK-05 | S3 fault recovery | ⚠️ Partial |
+| RISK-06 | IAE at 0% margin | 🔴 Open for CA4 |
+| RISK-07 | Time at 0% margin | 🔴 Open for CA4 |
+| RISK-08 | Energy trade-off | 🟡 Open for CA4 |
+| RISK-09 | HMI development | 🟡 Open for CA4 |
 
 ---
 
@@ -113,7 +110,6 @@
 3. **S3 fault recovery** - Implement state machine for smoother recovery
 4. **S2 obstacle threshold** - Increase to 1.2 m for safety margin
 5. **HMI development** - Complete for CA4
-6. **Controller code** - Pending from Member 180
 
 ---
 
@@ -126,11 +122,10 @@
 | 3 | Implement state machine for fault recovery | Member 180 |
 | 4 | Complete HMI development | Member 43 |
 | 5 | Increase obstacle threshold to 1.2 m | Member 180 |
-| 6 | Complete controller code | Member 180 |
 
 ---
 
-## Plant Model Parameters (From Member 46)
+## Plant Model Parameters
 
 | Parameter | Value | Description |
 |:----------|:------|:------------|
@@ -139,9 +134,6 @@
 | A | [-0.0153] | State matrix |
 | B | [-0.0004] | Input matrix |
 | C | [1.0000] | Output matrix |
-
-**Transfer Function:** G(s) = -0.0290 / (65.26s + 1)
-**RMS Error:** 0.0511 m | **Correlation:** 0.365
 
 ---
 
@@ -156,17 +148,9 @@
 | 2026-03-24 | Updated RTM and README | Member 43 |
 | 2026-03-24 | Updated risk log | Member 43 |
 | 2026-03-25 | Plant model documentation | Member 46 |
+| 2026-03-25 | Controller code | Member 180 |
 | 2026-03-25 | Final verification report | Member 43 |
 | 2026-03-25 | Final RTM and README | Member 43 |
-
----
-
-## GitHub Links
-
-- **CA3 Branch:** https://github.com/KulasingheSMN/Team05-MC3113-Project/tree/submissions/CA3
-- **Verification Report:** https://github.com/KulasingheSMN/Team05-MC3113-Project/blob/submissions/CA3/CA3-PDR/01-Verification/verification-report.pdf
-- **RTM v0.8:** https://github.com/KulasingheSMN/Team05-MC3113-Project/blob/submissions/CA3/CA3-PDR/03-RTM/rtm_v0.8.csv
-- **Plots Folder:** https://github.com/KulasingheSMN/Team05-MC3113-Project/tree/submissions/CA3/CA3-PDR/01-Verification/plots
 
 ---
 
