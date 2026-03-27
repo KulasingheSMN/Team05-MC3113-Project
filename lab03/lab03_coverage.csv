@@ -1,0 +1,6 @@
+req_id,description,test_id,metric,verdict,margin
+R-RESP-01,Step 60C rise time,TC-01,rise_time_10_90,PASS,20.2
+R-SS-01,Steady-state error at 60C,TC-02,ss_error_last20s,PASS,0.954165685798756
+R-SAFE-01,Heater limit above 85C,TC-03,max_heater_above_85,FAIL,-0.0262883613202084
+R-RAMP-01,Ramp tracking performance at 80C,TC-04,ramp_tracking_lag,PASS,4.9976777095901
+R-CONS-01,Steady-state after ramp,TC-05,ss_error_last20s,PASS,0.997970601866416

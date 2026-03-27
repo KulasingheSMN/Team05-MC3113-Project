@@ -1,0 +1,63 @@
+{
+  "generated": "2026-03-27T14:59:40",
+  "total_cases": 5,
+  "passed": 4,
+  "failed": 1,
+  "results": [
+    {
+      "test_id": "TC-01",
+      "req_id": "R-RESP-01",
+      "description": "Step 60C rise time",
+      "metric": "rise_time_10_90",
+      "measured": 9.8,
+      "threshold": 30,
+      "operator": "<=",
+      "verdict": "PASS",
+      "margin": 20.2
+    },
+    {
+      "test_id": "TC-02",
+      "req_id": "R-SS-01",
+      "description": "Steady-state error at 60C",
+      "metric": "ss_error_last20s",
+      "measured": 0.045834314201243558,
+      "threshold": 1,
+      "operator": "<=",
+      "verdict": "PASS",
+      "margin": 0.95416568579875649
+    },
+    {
+      "test_id": "TC-03",
+      "req_id": "R-SAFE-01",
+      "description": "Heater limit above 85C",
+      "metric": "max_heater_above_85",
+      "measured": 0.82628836132020844,
+      "threshold": 0.8,
+      "operator": "<=",
+      "verdict": "FAIL",
+      "margin": -0.026288361320208398
+    },
+    {
+      "test_id": "TC-04",
+      "req_id": "R-RAMP-01",
+      "description": "Ramp tracking performance at 80C",
+      "metric": "ramp_tracking_lag",
+      "measured": 0.0023222904098995907,
+      "threshold": 5,
+      "operator": "<=",
+      "verdict": "PASS",
+      "margin": 4.9976777095901008
+    },
+    {
+      "test_id": "TC-05",
+      "req_id": "R-CONS-01",
+      "description": "Steady-state after ramp",
+      "metric": "ss_error_last20s",
+      "measured": 0.0020293981335837131,
+      "threshold": 1,
+      "operator": "<=",
+      "verdict": "PASS",
+      "margin": 0.99797060186641628
+    }
+  ]
+}
