@@ -1,6 +1,5 @@
 {
   "team_number": 5,
-  "team_name": "Team 05",
   "submission_date": "2026-05-31",
   "S1": {
     "IAE_m_s": 0.021,
@@ -10,11 +9,12 @@
   },
   "S2": {
     "contacts": 0,
-    "time_s": 82
+    "time_s": 82,
+    "obstacle_min_distance_m": 0.28
   },
   "S3": {
     "max_v_fault_m_s": 0.3,
-    "fault_detection_time_s": 0.01,
+    "fault_detection_time_s": 40.01,
     "recovery_time_s": 65.2
   }
 }
