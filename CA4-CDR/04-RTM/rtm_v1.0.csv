@@ -1,11 +1,14 @@
 Req_ID,Requirement,Test_ID,Method,Scenario,Evidence,Status,Notes
-R-TRACK-01,|e_line| < 0.15 m,T-TRACK-01,T,S1,S1_final_log.csv,PASS,"Margin 99%"
-R-TRACK-02,IAE ≤ 0.025 m·s,T-TRACK-02,T,S1,S1_final_log.csv,PASS,"At limit"
-R-PERF-01,t_final ≤ 75 s,T-PERF-01,T,S1,S1_final_log.csv,PASS,"At limit"
-R-ENERGY-01,Energy < 65,T-ENERGY-01,A,S1,S1_final_log.csv,PASS,"Margin 3%"
-R-OBS-01,0 obstacle contacts,T-OBS-01,T,S2,S2_final_log.csv,PASS,Clean
-R-OBS-02,Complete S2 scenario,T-OBS-02,T,S2,S2_final_log.csv,PASS,"Recovery works"
-R-SAFE-01,v ≤ 0.45 m/s in fault,T-SAFE-01,T,S3,S3_final_log.csv,PASS,"Margin 33%"
-R-ROBUST-01,Detect fault within 1 cycle,T-SAFE-02,T,S3,S3_final_log.csv,PASS,0.01s
-R-HMI-01,Display telemetry at ≥10 Hz,T-HMI-01,I,N/A,hmi-documentation.pdf,PASS,Verified
-R-ARCH-01,ICD signals implemented,T-ARCH-01,I,N/A,ICD_final.csv,PASS,"8 signals"
+R-TRACK-01,|e_line| < 0.15 m,T-TRACK-01,T,S1,S1_final_log.csv,PASS,"max|e|=0.0007m (99.5% margin)"
+R-TRACK-02,IAE ≤ 0.022 m·s,T-TRACK-02,T,S1,S1_final_log.csv,PASS,"IAE=0.021 m·s (4.5% margin)"
+R-PERF-01,t_final ≤ 72 s,T-PERF-01,T,S1,S1_final_log.csv,PASS,"t=71.5s (0.7% margin)"
+R-ENERGY-01,Energy ≤ 60,T-ENERGY-01,A,S1,S1_final_log.csv,PASS,"Energy=58.5 (2.5% margin)"
+R-OBS-01,0 obstacle contacts,T-OBS-01,T,S2,S2_final_log.csv,PASS,"0 contacts, threshold=1.2m"
+R-OBS-02,Complete S2 scenario,T-OBS-02,T,S2,S2_final_log.csv,PASS,"t=82.0s"
+R-SAFE-01,v ≤ 0.45 m/s in fault,T-SAFE-01,T,S3,S3_final_log.csv,PASS,"max(v)=0.30m/s (33% margin)"
+R-ROBUST-01,Detect fault within 1 cycle,T-ROBUST-01,T,S3,S3_final_log.csv,PASS,"detected at t=40.01s"
+R-SAFE-03,Recover when fault clears,T-SAFE-03,T,S3,S3_final_log.csv,PASS,"resumed at t=67.0s (2s validation)"
+R-HMI-01,Display telemetry at ≥10 Hz,T-HMI-01,I,N/A,screenshots/02_telemetry_live.png,PASS,"e_line, v, flags displayed"
+R-HMI-02,Scenario selector functional,T-HMI-02,I,N/A,hmi-documentation.pdf,PASS,"S1/S2/S3 dropdown works"
+R-HMI-03,Post-run metrics displayed,T-HMI-03,I,N/A,screenshots/03_post_run_summary.png,PASS,"IAE, time, Pass/Fail table"
+R-ARCH-01,ICD signals implemented,T-ARCH-01,I,N/A,ICD_final.csv,PASS,"8 signals traced"
