@@ -9,11 +9,11 @@
   },
   "S2": {
     "contacts": 0,
-    "time_s": 82,
+    "time_s": 82.0,
     "obstacle_min_distance_m": 0.28
   },
   "S3": {
-    "max_v_fault_m_s": 0.3,
+    "max_v_fault_m_s": 0.30,
     "fault_detection_time_s": 40.01,
     "recovery_time_s": 65.2
   }
